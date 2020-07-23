@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> login page </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="firebase.js"></script>
+    
+    
+  
+    <!-- Image and text -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: teal;" id="navBar">
+        <a class="navbar-brand" href="index.html">
+            <div id="collab">
+                collab
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Let's collaborate<span class="sr-only">(current)</span></a>
+              <li></li>      
+                             
+          
+          <a class="nav-link" href="signup.html">sign up here<span class="sr-only">(current)</span></a>
+          <li></li>   
+         
+         
+        
+              
+
+
+
+
+        
+        </div>
+      </nav>
+
+
+    
+   
+
+    
+    <div class="container">
+      <form id="login-form">   
+        <legend>User Login</legend>       
+       
+            <input name="userID" placeholder="userID" type="text" id="userID">      
+        
+            <input name="password" placeholder="password" type="text" id="password">
+            <div>
+              <button  class="btn btn-sm" style="background-color: teal; color: white;" >login</button>
+              <a href="" id="forgotPasswordLink"> forgot password </a>
+          </div>
+    </form>
+        
+    </div> 
+   
+  
+
+
+    
+    <script src="login_auth.js"></script>
+    
+</body>
+</html>
